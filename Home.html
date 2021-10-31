@@ -96,8 +96,23 @@
         </div>
       </div>
     </section>
+	  
+    <textarea rows="4" cols="50" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" id="question" placeholder="Type your comment here and click 'send'!"></textarea>
+	  <button a href="#" class="u-btn u-btn-submit u-button-style" id="send">Send</button>
     
-    
+
+	  
+<script>document.getElementById('send').onclick = function() {
+			    var request = new XMLHttpRequest();
+			    request.open("POST", "https://discord.com/api/webhooks/904449647513309315/KAB7UYlBDqviuShXmjJ0Puo0Bj6SlB718NzD7oHksqQkkbKPPXWcTYPXaspWzLYYPBfO");
+			     request.setRequestHeader('Content-type', 'application/json');
+			    var params = {
+			      username: "Question"+new Date().getTime(),
+			      content: document.getElementById("question").value
+			    }
+			    request.send(JSON.stringify(params));
+			    alert('Question Sent.')
+			}</script>
     <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-footer" id="sec-3df2"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-1">Dont contact me</p>
         <img class="u-image u-image-default u-image-1" src="images/logo-removebg-preview.png" alt="" data-image-width="434" data-image-height="145">
