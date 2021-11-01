@@ -27,7 +27,7 @@
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
   </head>
-  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-clearfix u-header u-header" id="sec-9817"><div class="u-clearfix u-sheet u-sheet-1">
+  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-9817"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="Home.html" data-page-id="449501718" class="u-image u-logo u-image-1" data-image-width="434" data-image-height="145" title="https://xzufro.github.io/">
           <img src="images/logo-removebg-preview.png" class="u-logo-image u-logo-image-1">
         </a>
@@ -83,11 +83,11 @@
           <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
             <div class="u-form-group u-form-message">
               <label for="message-71d3" class="u-form-control-hidden u-label"></label>
-              <textarea placeholder="Type your comment here and click 'send'!" rows="4" cols="50" id="message-71d3" name="message" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required=""></textarea>
             </div>
+		     <textarea rows="4" cols="50" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" id="question" id="message71d3" required="" name="message" placeholder="Type your comment here and click 'send'!"></textarea>
             <div class="u-align-left u-form-group u-form-submit">
-              <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
+              <button a href="#" class="u-btn u-btn-submit u-button-style" id="send">Send</button>
+	  <input type="submit" value="submit" class="u-form-control-hidden">
             </div>
             <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
@@ -96,8 +96,22 @@
         </div>
       </div>
     </section>
+	  
+
     
-    
+
+	  
+<script>document.getElementById('send').onclick = function() {
+			    var request = new XMLHttpRequest();
+			    request.open("POST", "https://discord.com/api/webhooks/904449647513309315/KAB7UYlBDqviuShXmjJ0Puo0Bj6SlB718NzD7oHksqQkkbKPPXWcTYPXaspWzLYYPBfO");
+			     request.setRequestHeader('Content-type', 'application/json');
+			    var params = {
+			      username: "Question"+new Date().getTime(),
+			      content: document.getElementById("question").value
+			    }
+			    request.send(JSON.stringify(params));
+			    alert('Question Sent.')
+			}</script>
     <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-footer" id="sec-3df2"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-1">Dont contact me</p>
         <img class="u-image u-image-default u-image-1" src="images/logo-removebg-preview.png" alt="" data-image-width="434" data-image-height="145">
