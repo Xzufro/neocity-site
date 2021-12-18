@@ -13,7 +13,6 @@
     --content-bg-color: #551b70;
     /* header */
     --header-height: 150px;
-    --header-background: url('https://raw.githubusercontent.com/Xzufro/xzufro.github.io/main/images/banner.png');
     --header-margin-bottom: 0px;
     /* sidebar */
     --sidebar-margin: 10px;
@@ -21,7 +20,7 @@
     --sidebar-padding: 15px;
     --sidebar-bg-color: #884848;
     /* footer */
-    --footer-height: 30px;
+    --footer-height: 60px;
     --footer-bg-color: #043b24;
     /* navbar */
     --navitems-alignment: center;
