@@ -13,7 +13,7 @@
     --content-bg-color: #551b70;
     /* header */
     --header-height: 150px;
-    --header-background: url('https://xzufro.neocities.org/images/Banner.png');
+    --header-background: url('https://raw.githubusercontent.com/Xzufro/xzufro.github.io/main/images/banner.png');
     --header-margin-bottom: 0px;
     /* sidebar */
     --sidebar-margin: 10px;
@@ -43,7 +43,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-image: url("https://xzufro.neocities.org/images/bg.jpg");
+    background-image: url("https://raw.githubusercontent.com/Xzufro/xzufro.github.io/main/images/bg.jpg");
     font-family: var(--font-family);
     font-size: var(--font-size);
     line-height: var(--line-height);
