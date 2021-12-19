@@ -6,11 +6,11 @@
     --font-size: 14px;
     --line-height: 1.3em;
     --font-color: black;
-    --link-color: #22506A;
+    --link-color: #1f7eb6;
     --link-text-decoration: none;
     /* main content (between sidebars) */
     --content-padding: 25px;
-    --content-bg-color: #551b70;
+    --content-bg-color: #4a235c;
     /* header */
     --header-height: 150px;
     --header-margin-bottom: 0px;
@@ -18,15 +18,15 @@
     --sidebar-margin: 10px;
     --sidebar-width: 150px;
     --sidebar-padding: 15px;
-    --sidebar-bg-color: #884848;
+    --sidebar-bg-color: #b42b4e;
     /* footer */
     --footer-height: 60px;
-    --footer-bg-color: #043b24;
+    --footer-bg-color: #3f3255;
     /* navbar */
     --navitems-alignment: center;
     --space-between-navitems: 20px;
     --navbar-margin-bottom: 10px;
-    --nav-bg-color: #074a4d;
+    --nav-bg-color: #231f4e;
     /* container */
     --container-width: 800px;
     --container-bg-color: #4e1212;
@@ -60,6 +60,7 @@
     margin: 0 auto;
     background-color: var(--container-bg-color);
     font-family: 'Ubuntu', sans-serif;
+    border: 1px solid;
   }
 
   .flex {
@@ -98,7 +99,7 @@
   }
   #title {
     text-align: center;
-    color: green;
+    color: rgb(21, 68, 139);
   }
   #header-contained {
     height: var(--header-height);
