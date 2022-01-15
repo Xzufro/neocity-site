@@ -6,43 +6,45 @@
     --font-size: 14px;
     --line-height: 1.3em;
     --font-color: black;
-    --link-color: #1f7eb6;
     --link-text-decoration: none;
     /* main content (between sidebars) */
     --content-padding: 25px;
-    --content-bg-color: #4a235c;
+    
     /* header */
     --header-height: 150px;
     --header-margin-bottom: 0px;
+
     /* sidebar */
     --sidebar-margin: 10px;
     --sidebar-width: 150px;
     --sidebar-padding: 15px;
-    --sidebar-bg-color: #b42b4e;
+    
     /* footer */
     --footer-height: 60px;
-    --footer-bg-color: #3f3255;
+    
     /* navbar */
-    --navitems-alignment: center;
     --space-between-navitems: 20px;
-    --navbar-margin-bottom: 10px;
-    --nav-bg-color: #231f4e;
+    
     /* container */
-    --container-width: 800px;
-    --container-bg-color: #4e1212;
+    --container-width: 1200px;
+    
     /* controls the gap between the content and the footer */
     --row-gap: 5px;
     /* To add scrollbars to your sidebars, just make the height a px value and change overflow to 'auto' */
     --sidebar-height: 100%;
     --sidebar-overflow: hidden;
-    --background-color: #284b52;
+    /*BG COLORS*/
+    --container-bg-color: #7c0a99;
+    --nav-bg-color: #231f4e;
+    --sidebar-bg-color: #29917a;
+    --content-bg-color: #8a1ebd;
+    --footer-bg-color: #441e85;
   }
 
   html,
   body {
     margin: 0;
     padding: 0;
-    background-image: url("https://raw.githubusercontent.com/Xzufro/xzufro.github.io/main/images/bg.jpg");
     font-family: var(--font-family);
     font-size: var(--font-size);
     line-height: var(--line-height);
@@ -54,6 +56,19 @@
     font-weight: bold;
     text-decoration: var(--link-text-decoration);
   }
+  /*LINK COLORS*/
+  #navbar a:link {
+    color:#13ad8c
+  }
+  #navbar a:visited {
+    color:#0c7c64
+  }
+  #navbar a:hover{
+    color:#6fecd1
+  }
+  #navbar a:active {
+    color:#b42b4e
+  }
 
   #main-container {
     max-width: var(--container-width);
@@ -63,13 +78,18 @@
     border: 1px solid;
   }
 
+  /*SINGULARITIES*/
+  #construction { /*THE "UNDER CONSTRUCTION" MARQUEE*/
+    color: crimson;
+  }
+
   .flex {
     display: flex;
     margin-bottom: var(--row-gap);
   }
 
   .content-wrap {
-    margin-top: var(--content-margin-top);
+    margin-top: 0px;
   }
 
   #content-container {
@@ -77,9 +97,7 @@
     margin-bottom: var(--row-gap);
     background-color: var(--content-bg-color);
   }
-  #construction {
-    color: crimson;
-  }
+  
   #left-sidebar {
     width: var(--sidebar-width);
     margin-right: var(--sidebar-margin);
@@ -98,13 +116,13 @@
     background-color: var(--sidebar-bg-color);
   }
   #title {
+    font-size: x-large;
     text-align: center;
-    color: rgb(21, 68, 139);
+    color: rgb(184, 43, 43);
   }
   #header-contained {
     height: var(--header-height);
     margin-bottom: var(--header-margin-bottom);
-    background-image: var(--header-background);
     background-position: center center;
   }
 
@@ -121,9 +139,9 @@
 
   .nav {
     margin-left: 0;
-    text-align: var(--navitems-alignment);
+    text-align: center;
     margin-top: 0;
-    margin-bottom: var(--navbar-margin-bottom);
+    margin-bottom: none;
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: var(--nav-bg-color);
