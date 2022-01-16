@@ -16,7 +16,7 @@
 
     /* sidebar */
     --sidebar-margin: 10px;
-    --sidebar-width: 150px;
+    --sidebar-width: 200px;
     --sidebar-padding: 15px;
     
     /* footer */
@@ -58,10 +58,10 @@
   }
   /*LINK COLORS*/
   #navbar a:link {
-    color:#13ad8c
+    color:#244d81
   }
   #navbar a:visited {
-    color:#0c7c64
+    color:#7c0c51
   }
   #navbar a:hover{
     color:#6fecd1
@@ -132,11 +132,13 @@
     color: var(--font-color);
     background-color: var(--footer-bg-color);
   }
-
-  #navbar-contained {
-    margin-bottom: var(--row-gap)
+  /*NAVBAR*/
+  #navbar {
+    margin-bottom: var(--row-gap);
+    width: 1200px;
+    margin: auto;
+    
   }
-
   .nav {
     margin-left: 0;
     text-align: center;
@@ -145,15 +147,14 @@
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: var(--nav-bg-color);
-  }
 
+  }
   .nav li {
     display: inline-block;
     padding-right: var(--space-between-navitems);
   }
-
   .nav li a {
-      font-family: 'Ubuntu', sans-serif;
+    font-family: 'Quicksand', sans-serif;
       font-size: 24px;
   }
 

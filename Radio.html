@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="script.js"></script>  
+    <script type="text/javascript" src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/icon.jpg">
     <title>89.55123 KKFSDFM RADIO STATION YAHOOOOO</title>
@@ -10,202 +11,210 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-  </head>
-  <body background="images/bg/bg1.png">
+</head>
+
+<body background="images/bg/bg_66.gif">
     <div id="title">
-      <h1>MUSIC LAND</h1>
+        <h1>MUSIC LAND</h1>
     </div>
-    <marquee behavior="alternate" direction=right id="construction"><h3 id="construction">**UNDER CONSTRUCTION**</h3></marquee>
-    <div id="main-container">
-      <div id="navbar" style="display: block;">
+    <marquee behavior="alternate" direction=right id="construction">
+        <h3 id="construction">**UNDER CONSTRUCTION**</h3>
+    </marquee>
+
+    <div id="navbar" style="display: block;">
         <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Links.html">Links</a></li>
-          <li><a href="Projects.html">Projects</a></li>
-          <li><a href="Downloads.html">Downloads</a></li>
-          <li><a href="Shop.html">Shop</a></li>
-          <li><a href="Radio.html">Radio</a></li>
-          <li><a href="About.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Links.html">Links</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Downloads.html">Downloads</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li><a href="Radio.html">Radio</a></li>
+            <li><a href="About.html">About</a></li>
         </ul>
-      </div>
     </div>
-     
-<div id="main-container">
-  <div class="content-wrap flex alignment">
-     <div id="content-container" style="flex-grow: 1;">
-      <div class="wrapper">HERES A COOL ASS RADIO FULL OF MY AMAZING PLAYLIST<br>
-    USE IT TO LISTEN TO MUSIC AND ALL THAT<br>
-    IF YA WANNA ADD IT TO YO OWN WEBSITE GO TO <a href="https://github.com/captbaritone/webamp">Webamp</a>
-    YOU CAN DRAG AND DROP SKINS FROM <a href="https://skins.webamp.org/">HERE</a><br>
-    YOU CAN ALSO DRAG AND DROP YO OWN AUDIO FILES TOO<br>
-    DM ME ON DISCORD IF YOU WANT ME TO ADD MORE GOODASS SONGS OR WANT HELP IMPLEMENTING THIS</div><br><br><br><br><br>
+
+
+    <div id="main-container">
+        <div class="content-wrap flex alignment">
+            <div id="content-container" style="flex-grow: 1;">
+                <div class="wrapper">HERES A COOL ASS RADIO FULL OF MY AMAZING PLAYLIST<br>
+                    USE IT TO LISTEN TO MUSIC AND ALL THAT<br>
+                    IF YA WANNA ADD IT TO YO OWN WEBSITE GO TO <a
+                        href="https://github.com/captbaritone/webamp">Webamp</a>
+                    YOU CAN DRAG AND DROP SKINS FROM <a href="https://skins.webamp.org/">HERE</a><br>
+                    YOU CAN ALSO DRAG AND DROP YO OWN AUDIO FILES TOO<br>
+                    DM ME ON DISCORD IF YOU WANT ME TO ADD MORE GOODASS SONGS OR WANT HELP IMPLEMENTING THIS</div>
+                <br><br><br><br><br>
+            </div>
+        </div>
+        <div id="winamp-container">
+            <div id="app" style="height: 2px; width:200px; padding: 200px; 300px"></div>
+            <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+            <script>
+                const Webamp = window.Webamp;
+
+                new Webamp({
+                    initialTracks: [{
+
+                            metaData: {
+                                artist: "Miracle Musical",
+                                title: "White Ball"
+                            },
+                            url: "sound/White Ball.mp3",
+                            duration: 5.322286
+                        },
+
+
+
+                        {
+                            metaData: {
+                                artist: "ATLUS",
+                                title: "Persona"
+                            },
+                            url: "sound/Persona.mp3",
+                            duration: 5.322286
+                        },
+
+                        {
+                            metaData: {
+                                artist: "Keiichi Okabe",
+                                title: "Song of the Ancients - Fate"
+                            },
+                            url: "sound/Fate.mp3",
+                            duration: 5.322286
+                        },
+
+
+                        {
+                            metaData: {
+                                artist: "Keiichi Okabe",
+                                title: "Emil - Karma"
+                            },
+                            url: "sound/Emil - Karma.mp3",
+                            duration: 5.322286
+                        },
+
+                        {
+                            metaData: {
+                                artist: "RAFVEN",
+                                title: "Shadowlord"
+                            },
+                            url: "sound/Shadowlord.mp3",
+                            duration: 5.322286
+                        },
+
+                        {
+                            metaData: {
+                                artist: "OMOCAT",
+                                title: "BREADY STEADY GO"
+                            },
+                            url: "sound/bready steady go.mp3",
+                            duration: 5.322286
+                        },
+
+                        {
+                            metaData: {
+                                artist: "OMOCAT",
+                                title: "NEVER/ALWAYS"
+                            },
+                            url: "sound\NEVER_ALWAYS.mp3",
+                            duration: 5.322286
+                        },
+
+                        {
+                            metaData: {
+                                artist: "Lemon Demon",
+                                title: "Cabinet Man"
+                            },
+                            url: "sound/Cabinet Man.mp3",
+                            duration: 5.322286
+                        },
+                        {
+                            metaData: {
+                                artist: "MACROSS 82-99",
+                                title: "Do You Remember Love"
+                            },
+                            url: "sound/Do You Remember Love.mp3",
+                            duration: 5.322286
+                        },
+                        {
+                            metaData: {
+                                artist: "AJR",
+                                title: "World's Smallest Violin"
+                            },
+                            url: "sound/World's Smallest Violin.mp3",
+                            duration: 5.322286
+                        },
+
+                        {
+                            metaData: {
+                                artist: "ATLUS",
+                                title: "Time to Make History"
+                            },
+                            url: "sound/Time to Make History - Persona 4 The Golden.mp3",
+                            duration: 5.322286
+                        },
+                        {
+                            metaData: {
+                                artist: "Asokah",
+                                title: "Relief"
+                            },
+                            url: "sound/asokah - relief..mp3",
+                            duration: 5.322286
+                        },
+                        {
+                            metaData: {
+                                artist: "Mr. Oizo",
+                                title: "Cut Dick"
+                            },
+                            url: "sound/Cut Dick.mp3",
+                            duration: 5.322286
+                        },
+                        {
+                            metaData: {
+                                artist: "SoulChef",
+                                title: "Write This Down"
+                            },
+                            url: "sound/SoulChef - Write This Down (Feat. Nieve).mp3",
+                            duration: 5.322286
+                        },
+                        {
+                            metaData: {
+                                artist: "Kingo Hamada",
+                                title: "Dolphin In Town"
+                            },
+                            url: "sound/Dolphin In Town.mp3",
+                            duration: 5.322286
+                        },
+                        {
+                            metaData: {
+                                artist: "Electric Light Orchestra",
+                                title: "Mr. Blue Sky"
+                            },
+                            url: "sound/Mr. Blue Sky.mp3",
+                            duration: 5.322286
+                        },
+                        {
+                            metaData: {
+                                artist: "Mother Mother",
+                                title: "Tic Toc"
+                            },
+                            url: "sound/Tic Toc.mp3",
+                            duration: 5.322286
+                        }
+                    ],
+
+                    initialSkin: {
+                        url: "sound/dosamp.wsz"
+                    },
+                }).renderWhenReady(document.getElementById('app'));
+            </script>
+        </div>
+
+        <div id="footer">
+            <div class="footer-wrapper">yahooooooooooooooooooooooooooooooooo</div>
+        </div>
     </div>
-  </div>
-  <div id="winamp-container">
-    <div id="app" style="height: 2px; width:200px; padding: 200px; 100px"></div>
-    <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
-    <script>
-        const Webamp = window.Webamp;
-        
-        new Webamp({
-            initialTracks: [{
-            
-                metaData: {
-                    artist: "Miracle Musical",
-                    title: "White Ball"
-                },
-                url: "sound/White Ball.mp3",
-                duration: 5.322286
-            },
-          
-            
-            
-              {
-                metaData: {
-                    artist: "ATLUS",
-                    title: "Persona"
-                },
-                url: "sound/Persona.mp3",
-                duration: 5.322286
-            },
-            
-               {
-                metaData: {
-                    artist: "Keiichi Okabe",
-                    title: "Song of the Ancients - Fate"
-                },
-                url: "sound/Fate.mp3",
-                duration: 5.322286
-            },
-            
-            
-                                              {
-                metaData: {
-                    artist: "Keiichi Okabe",
-                    title: "Emil - Karma"
-                },
-                url: "sound/Emil - Karma.mp3",
-                duration: 5.322286
-            },
-            
-                                                         {
-                metaData: {
-                    artist: "RAFVEN",
-                    title: "Shadowlord"
-                },
-                url: "sound/Shadowlord.mp3",
-                duration: 5.322286
-            },
-            
-                                                         {
-                metaData: {
-                    artist: "OMOCAT",
-                    title: "BREADY STEADY GO"
-                },
-                url: "sound/bready steady go.mp3",
-                duration: 5.322286
-            },
+</body>
 
-            {
-                metaData: {
-                    artist: "OMOCAT",
-                    title: "NEVER/ALWAYS"
-                },
-                url: "sound\NEVER_ALWAYS.mp3",
-                duration: 5.322286
-            },
-            
-            {
-                metaData: {
-                    artist: "Lemon Demon",
-                    title: "Cabinet Man"
-                },
-                url: "sound/Cabinet Man.mp3",
-                duration: 5.322286
-            },
-            {
-                metaData: {
-                    artist: "MACROSS 82-99",
-                    title: "Do You Remember Love"
-                },
-                url: "sound/Do You Remember Love.mp3",
-                duration: 5.322286
-            },
-                                                         {
-                metaData: {
-                    artist: "AJR",
-                    title: "World's Smallest Violin"
-                },
-                url: "sound/World's Smallest Violin.mp3",
-                duration: 5.322286
-            },
-            
-                                                         {
-                metaData: {
-                    artist: "ATLUS",
-                    title:  "Time to Make History"
-                },
-                url: "sound/Time to Make History - Persona 4 The Golden.mp3",
-                duration: 5.322286
-            },
-                                                         {
-                metaData: {
-                    artist: "Asokah",
-                    title: "Relief"
-                },
-                url: "sound/asokah - relief..mp3",
-                duration: 5.322286
-            },
-                                                         {
-                metaData: {
-                    artist: "Mr. Oizo",
-                    title:  "Cut Dick"
-                },
-                url: "sound/Cut Dick.mp3",
-                duration: 5.322286
-            },
-                                                                     {
-                metaData: {
-                    artist: "SoulChef",
-                    title:  "Write This Down"
-                },
-                url: "sound/SoulChef - Write This Down (Feat. Nieve).mp3",
-                duration: 5.322286
-            },
-                                                                     {
-                metaData: {
-                    artist: "Kingo Hamada",
-                    title:  "Dolphin In Town"
-                },
-                url: "sound/Dolphin In Town.mp3",
-                duration: 5.322286
-            },
-                                                                     {
-                metaData: {
-                    artist: "Electric Light Orchestra",
-                    title:  "Mr. Blue Sky"
-                },
-                url: "sound/Mr. Blue Sky.mp3",
-                duration: 5.322286
-            },
-                                                                     {
-                metaData: {
-                    artist: "Mother Mother",
-                    title:  "Tic Toc"
-                },
-                url: "sound/Tic Toc.mp3",
-                duration: 5.322286
-            }],
-
-            initialSkin: {
-             url: "sound/dosamp.wsz"
-            },
-        }).renderWhenReady(document.getElementById('app'));
-    </script></div>
-
-  <div id="footer">
-    <div class="footer-wrapper">yahooooooooooooooooooooooooooooooooo</div>
-  </div>
-</div>
-  </body>
 </html>
