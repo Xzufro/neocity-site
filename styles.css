@@ -2,7 +2,6 @@
   :root {
     /* These variables exist so you can make quick and simple style changes without much CSS knowledge */
     /* applies to all areas */
-    --font-family: sans-serif;
     --font-size: 14px;
     --line-height: 1.3em;
     --font-color: black;
@@ -35,20 +34,34 @@
     --sidebar-overflow: hidden;
     /*BG COLORS*/
     --container-bg-color: #7c0a99;
-    --nav-bg-color: #231f4e;
+    --nav-bg-color: RGBA(35, 31, 78, 0.78);
     --sidebar-bg-color: #29917a;
     --content-bg-color: #8a1ebd;
     --footer-bg-color: #441e85;
   }
-
+  @font-face {
+    font-family: "visitor";
+    src: url(/fonts/visitor.ttf);
+  }
+  @font-face {
+    font-family: "damagrafik";
+    src: url(/fonts/damagrafik.ttf);
+  }
+  @font-face {
+    font-family: addsbp;
+    src: url("/fonts/ADDSBP__.TTF");
+  }
+  
   html,
   body {
     margin: 0;
     padding: 0;
-    font-family: var(--font-family);
     font-size: var(--font-size);
     line-height: var(--line-height);
     color: var(--font-color);
+  }
+  p {
+    font-family: visitor;
   }
 
   body a {
@@ -117,6 +130,7 @@
   }
   #title {
     font-size: x-large;
+    font-family: addsbp;
     text-align: center;
     color: rgb(184, 43, 43);
   }
@@ -127,6 +141,8 @@
   }
 
   #footer {
+    font-family: addsbp;
+    font-size: 11px;
     height: var(--footer-height);
     text-align: center;
     color: var(--font-color);
