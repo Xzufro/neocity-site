@@ -64,7 +64,9 @@
     font-family: visitor;
     font-size: 18px;
   }
-
+  h1 {
+    font-family: visitor;
+  }
   body a {
     color: var(--link-color);
     font-weight: bold;
@@ -179,6 +181,7 @@
   }
 
   .wrapper {
+    font-family: visitor;
     padding: var(--content-padding);
     padding-top: var(--sidebar-padding);
   }
