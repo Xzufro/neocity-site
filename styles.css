@@ -89,7 +89,6 @@
   #main-container {
     max-width: var(--container-width);
     margin: 0 auto;
-    background-color: var(--container-bg-color);
     font-family: 'Ubuntu', sans-serif;
     border: 1px solid;
   }
