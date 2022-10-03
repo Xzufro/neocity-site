@@ -41,14 +41,14 @@
   }
   @font-face {
     font-family: "visitor";
-    src: url(/fonts/visitor.ttf);
+    src: url("/fonts/visitor.ttf");
   }
   @font-face {
     font-family: "damagrafik";
-    src: url(/fonts/damagrafik.ttf);
+    src: url("/fonts/damagrafik.ttf");
   }
   @font-face {
-    font-family: addsbp;
+    font-family: "addsbp";
     src: url("/fonts/ADDSBP__.TTF");
   }
   
